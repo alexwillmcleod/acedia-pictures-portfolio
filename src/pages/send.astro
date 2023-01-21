@@ -2,7 +2,6 @@
 import '../styles/global.css';
 
 import nodemailer from 'nodemailer';
-import dotenv from 'dotenv';
 import type Mail from 'nodemailer/lib/mailer';
 
 const name = Astro.url.searchParams.get('name');
@@ -18,8 +17,6 @@ if (!name || !email || !moreInfo) {
 }
 
 console.log(Astro.url.searchParams);
-
-dotenv.config();
 
 // Get authentication for SMPT server
 const smtpUser = process.env.SMTP_USER;

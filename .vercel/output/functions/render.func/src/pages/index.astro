@@ -1,0 +1,544 @@
+---
+import ContactForm from '../components/contact-form.astro';
+import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import Testimonial from '../components/testimonial.astro';
+import '../styles/global.css';
+import portfolioVideo from './AcediaPictures.mp4';
+import logo from '/logo.svg';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>Acedia</title>
+  </head>
+
+  <body>
+    <Header>
+      <nav>
+        <a href="">
+          <svg
+            viewBox="0 0 57 47"
+            width="60"
+          >
+            <circle
+              cx="16"
+              cy="31"
+              r="15"
+              fill="white"
+              stroke="white"
+            ></circle>
+            <circle
+              cx="46"
+              cy="11"
+              r="10"
+              fill="none"
+              stroke="white"
+            ></circle>
+          </svg>
+        </a>
+      </nav>
+      <nav class="nav-bar">
+        <a
+          class="nav-item"
+          href="#testimonials"
+          >Testimonials</a
+        >
+        <a
+          class="nav-item"
+          href="#portfolio"
+          >Portfolio</a
+        >
+
+        <a
+          class="nav-item"
+          href="#get-started"
+          >Get Started</a
+        >
+      </nav>
+      <nav class="hamburger-bar">
+        <button class="hamburger-button">
+          <svg
+            height="32px"
+            class="hamburger-icon"
+            id="Layer_1"
+            style="enable-background:new 0 0 32 32;"
+            version="1.1"
+            viewBox="0 0 32 32"
+            width="32px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            ><path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            ></path></svg
+          >
+        </button>
+        <script>
+          function toggleHamburgerBar() {
+            // Add class to navbar
+            const navbar = document.querySelector('.nav-bar')!;
+            const navItems = document.querySelectorAll('.nav-item');
+            const isShowing = navbar.classList.contains('show');
+
+            if (isShowing) {
+              navbar.classList.remove('show');
+              navItems.forEach((element) => {
+                element.removeEventListener('click', toggleHamburgerBar);
+              });
+            } else {
+              navbar.classList.add('show');
+              navItems.forEach((element) => {
+                element.addEventListener('click', toggleHamburgerBar);
+              });
+            }
+          }
+          document
+            .querySelector('.hamburger-button')!
+            .addEventListener('click', toggleHamburgerBar);
+        </script>
+      </nav>
+    </Header>
+    <div class="card">
+      <div class="about-div">
+        <h1 class="title">Acedia</h1>
+        <p class="about">
+          Invent revolutionary cinematic experiences. Immerse your audience with
+          industry-leading storytelling and design.
+        </p>
+        <p class="call-to-action">
+          Lights, Camera, <a
+            class="call-to-action-get-started"
+            href="#get-started"
+            >Get Started</a
+          >
+        </p>
+      </div>
+      <div class="logo-div">
+        <svg
+          viewBox="0 0 57 47"
+          width="60"
+          class="gradient-logo"
+        >
+          <defs>
+            <linearGradient
+              id="header-shape-gradient"
+              x2="0.35"
+              y2="1"
+            >
+              <stop
+                offset="0%"
+                stop-color="var(--color-stop)"
+              ></stop>
+              <stop
+                offset="30%"
+                stop-color="var(--color-stop)"
+              ></stop>
+              <stop
+                offset="100%"
+                stop-color="var(--color-bot)"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <circle
+              class="gradient-bg gradient-stroke"
+              cx="16"
+              cy="31"
+              r="15"
+              fill="white"
+              stroke="white"
+            ></circle>
+            <circle
+              class="gradient-stroke"
+              cx="46"
+              cy="11"
+              r="10"
+              fill="none"
+              stroke="white"
+            ></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div
+      class="card"
+      id="testimonials"
+    >
+      <div class="testimonials-div">
+        <p class="card-title">Testimonials</p>
+        <div class="testimonials-grid">
+          <Testimonial
+            quote="The Best"
+            source="Larry Cai"
+          />
+          <Testimonial
+            quote="Excellent work, loved every moment, created something really special!"
+            source="Somebody"
+          />
+          <Testimonial
+            quote="Top tier experience, took my film project to the next level"
+            source="Someone else"
+          />
+          <Testimonial
+            quote="Could not have filmed tenet without them"
+            source="Christopher Nolan"
+          />
+          <Testimonial
+            quote="Was just happy to be in the prescence of such ingenious film design"
+            source="Sandra Boubee"
+          />
+          <Testimonial
+            quote="Really made me appreciate the work behind film"
+            source="Human Being"
+          />
+          <Testimonial
+            quote="Incredible!"
+            source="Everbody"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
+      id="portfolio"
+    >
+      <div class="portfolio-div">
+        <p class="card-title">Portfolio</p>
+        <iframe
+          class="portfolio-video"
+          width="1120"
+          height="630"
+          src="https://www.youtube-nocookie.com/embed/L2k9udsS-nI?rel=0"
+          title="YouTube video player"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+    <div
+      class="card"
+      id="get-started"
+    >
+      <div class="contact-div">
+        <p class="card-title">Get Started</p>
+        <div class="contact-form">
+          <ContactForm />
+        </div>
+      </div>
+    </div>
+    <Footer>
+      <p class="foot-item">Acedia Pictures 2023. All Rights Reserved.</p>
+      <p class="foot-divider">|</p>
+      <a
+        class="foot-item"
+        href="https://www.instagram.com/acediapictures/"
+        target="_blank"
+        >Instagram</a
+      >
+      <p class="foot-divider">|</p>
+      <a
+        class="foot-item"
+        href="https://www.youtube.com/@acediapictures4260"
+        target="_blank"
+        >Youtube</a
+      >
+      <p class="foot-divider">|</p>
+
+      <a
+        class="foot-item"
+        href="https://www.alexwillmcleod.com"
+        target="_blank"
+        >Developed and deployed with &lt3 by Alex McLeod</a
+      >
+    </Footer>
+  </body>
+
+  <style>
+    .title {
+      font-family: 'Inter';
+      font-size: 8rem;
+      font-weight: 600;
+      background: rgb(238, 174, 202);
+      background: -moz-linear-gradient(
+        90deg,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        90deg,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      background: linear-gradient(
+        90deg,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+
+      color: transparent;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      gap: 1.2rem;
+    }
+    .foot-divider {
+      font-family: 'Inter';
+      color: rgb(227, 227, 227);
+      text-decoration: none;
+      user-select: none;
+      font-size: 1rem;
+    }
+    .nav-item {
+      font-family: 'Inter';
+      color: rgb(227, 227, 227);
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      font-size: 1rem;
+    }
+
+    .hamburger-bar {
+      display: none;
+    }
+    .hamburger-icon {
+      fill: white;
+      cursor: pointer;
+    }
+    .hamburger-button {
+      background-color: transparent;
+      border: none;
+    }
+    .foot-item {
+      font-family: 'Inter';
+      color: rgb(227, 227, 227);
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      font-size: 1rem;
+    }
+    .card {
+      width: 100vw;
+      padding: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+    .call-to-action {
+      font-family: 'Inter';
+      color: rgb(202, 202, 202);
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .call-to-action-get-started {
+      font-family: 'Inter';
+      color: rgb(202, 202, 202);
+      text-decoration: none;
+      font-size: 1.4rem;
+      padding-bottom: 0.5rem;
+      font-weight: bolder;
+      background-position: left bottom;
+      background-image: linear-gradient(
+        90deg,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+      background-size: 0% 0.6rem;
+      background-repeat: no-repeat;
+      transition: background-size 300ms ease;
+    }
+    .call-to-action-get-started:visited {
+      color: rgb(202, 202, 202);
+    }
+    .call-to-action-get-started:hover {
+      background-size: 100% 0.6rem;
+    }
+    .about-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      gap: 2rem;
+      width: 50%;
+    }
+    .logo-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+    .about {
+      font-family: 'Inter';
+      color: rgb(202, 202, 202);
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .gradient-logo {
+      width: 20rem;
+      z-index: -2;
+      filter: drop-shadow(-1.5rem -1.5rem 10rem rgba(238, 174, 202, 1))
+        drop-shadow(1.5rem 1.5rem 10rem rgba(148, 187, 233, 1));
+    }
+
+    .gradient-logo .gradient-bg {
+      fill: url(#header-shape-gradient) #fff;
+    }
+
+    .gradient-logo .gradient-stroke {
+      stroke: url(#header-shape-gradient) #fff;
+    }
+
+    #header-shape-gradient {
+      --color-stop: #eeaeca;
+      --color-bot: #94bbe9;
+    }
+
+    .testimonials-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .testimonials-grid {
+      background-color: rgba(63, 79, 114, 0.151);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      /**
+   * User input values.
+   */
+      --grid-layout-gap: 1rem;
+      --grid-column-count: 4;
+      --grid-item--min-width: 12rem;
+
+      /**
+   * Calculated values.
+   */
+      --gap-count: calc(var(--grid-column-count) - 1);
+      --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+      --grid-item--max-width: calc(
+        (100% - var(--total-gap-width)) / var(--grid-column-count)
+      );
+
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fill,
+        minmax(
+          max(var(--grid-item--min-width), var(--grid-item--max-width)),
+          1fr
+        )
+      );
+      grid-gap: var(--grid-layout-gap);
+    }
+
+    .card-title {
+      font-family: 'Inter';
+      color: rgb(202, 202, 202);
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    .portfolio-div {
+      width: 100%;
+      display: flex;
+      overflow-x: hidden;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .portfolio-video {
+      width: 90vw;
+      height: calc((9 / 16) * 90vw);
+    }
+
+    .contact-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+      }
+      .about-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .logo-div {
+        width: 100%;
+      }
+      .title {
+        align-self: center;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .title {
+        font-size: 6rem;
+      }
+      .card {
+        padding: 1.2rem;
+      }
+
+      .nav-bar,
+      .foot-divider {
+        display: none;
+      }
+
+      .nav-bar.show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 6.01rem;
+        padding: 3rem;
+        left: 0;
+        z-index: 999;
+        width: 100vw;
+        background-color: rgba(27, 31, 39, 0.98);
+        backdrop-filter: blur(1rem);
+      }
+
+      .nav-bar.show * {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      .hamburger-bar {
+        display: flex;
+      }
+    }
+  </style>
+</html>

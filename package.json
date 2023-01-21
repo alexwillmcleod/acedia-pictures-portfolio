@@ -16,7 +16,6 @@
     "@types/node": "^18.11.18",
     "@types/nodemailer": "^6.4.7",
     "astro": "^1.9.0",
-    "dotenv": "^16.0.3",
     "nodemailer": "^6.9.0"
   }
 }
