@@ -1,0 +1,299 @@
+<div class="container">
+  <h1 class="title">Contact Us!</h1>
+  <form action="/send">
+    <div class="label-input-pair">
+      <label for="name">Hi! My name is</label>
+      <input
+        name="name"
+        placeholder="Your Name"
+      />
+    </div>
+    <div class="label-input-pair">
+      <input
+        name="email"
+        placeholder="Your Email"
+      />
+      <label for="email">is my email address</label>
+    </div>
+    <div class="label-input-pair">
+      <label for="company">I work for</label>
+
+      <input
+        name="company"
+        placeholder="Your Company (if applicable)"
+      />
+    </div>
+    <div class="gap"></div>
+    <div class="radio-form">
+      <label for="purpose">This video is for</label>
+
+      <div class="options">
+        <div class="label-input-pair">
+          <label
+            for="business-promotion"
+            class="radio-input"
+            >Business Promotion</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="business-promotion"
+            value="Business Promotion"
+            name="purpose"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="product-advertisement"
+            class="radio-input"
+            >Product Advertisement</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="product-advertisement"
+            value="Product Advertisement"
+            name="purpose"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="event-coverage"
+            class="radio-input"
+            >Event Coverage</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="event-coverage"
+            value="Event Coverage"
+            name="purpose"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="training-video"
+            class="radio-input"
+            >Training Video</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="training-video"
+            value="Training Video"
+            name="purpose"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="other"
+            class="radio-input"
+            >Other</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="other"
+            value="Other"
+            name="purpose"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="gap"></div>
+    <div>
+      <div class="label-textarea-pair">
+        <label for="more-info">This is everything about my video:</label>
+
+        <textarea name="more-info"></textarea>
+      </div>
+    </div>
+    <div class="gap"></div>
+    <div class="radio-form">
+      <label for="heard-about">I heard about you from:</label>
+
+      <div class="options">
+        <div class="label-input-pair">
+          <label
+            for="google"
+            class="radio-input"
+            >Google</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="google"
+            value="Google"
+            name="heard-about"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="word-of-mouth"
+            class="radio-input"
+            >Word of Mouth</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="word-of-mouth"
+            value="Word of Mouth"
+            name="heard-about"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="social-media"
+            class="radio-input"
+            >Social Media</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="social-media"
+            value="Social Media"
+            name="heard-about"
+          />
+        </div>
+        <div class="label-input-pair">
+          <label
+            for="other"
+            class="radio-input"
+            >Other</label
+          >
+
+          <input
+            type="radio"
+            class="radio-button"
+            id="other"
+            value="Other"
+            name="heard-about"
+          />
+        </div>
+      </div>
+    </div>
+    <input
+      class="send-button"
+      type="submit"
+      value="Send 🚀"
+    />
+  </form>
+</div>
+
+<style>
+  .gap {
+    height: 2rem;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(89, 109, 154, 0.329);
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+  .radio-button {
+    cursor: pointer;
+  }
+  .radio-input {
+    cursor: pointer;
+  }
+  .radio-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: rgba(68, 78, 99, 0.527);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    gap: 3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .title {
+    background: rgb(238, 174, 202);
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    font-weight: bold;
+  }
+  .label-input-pair {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .label-textarea-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  label {
+    color: rgb(202, 202, 202);
+    font-size: 1.2rem;
+  }
+  input {
+    font-size: 1.2rem;
+    border: none;
+    padding: 1rem;
+    background-color: rgba(68, 78, 99, 0.527);
+    color: rgb(202, 202, 202);
+    border-radius: 0.5rem;
+  }
+  textarea {
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.4rem;
+    background-color: rgba(68, 78, 99, 0.527);
+    color: rgb(202, 202, 202);
+    border-radius: 0.5rem;
+  }
+  .send-button {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 550px) {
+    .container {
+      width: 90vw;
+    }
+    input {
+      max-width: 70%;
+      width: fit-content;
+    }
+    textarea {
+      max-width: 100%;
+    }
+  }
+</style>

@@ -1,0 +1,30 @@
+---
+---
+
+<div class="container">
+  <slot />
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+    background-color: rgba(27, 31, 39, 0.689);
+    backdrop-filter: blur(1rem);
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
+    height: 6rem;
+    width: 100vw;
+    top: 0;
+  }
+  .container > nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+</style>
