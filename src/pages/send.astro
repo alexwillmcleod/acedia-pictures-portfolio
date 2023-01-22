@@ -42,25 +42,28 @@ const transporter = nodemailer.createTransport({
 const mailOptions: Mail.Options = {
   from: name,
   to: smtpTo,
-  subject: purpose || 'Portfolio Contact',
-  text: `Hi! My name is ${name}. ${email} is my email address.${
-    company ? ` I work for ${company}.` : ''
+  subject: 'Portfolio Contact',
+  text: `Name:${name}\nEmail: ${email}\n${
+    company ? ` I work for ${company}\n` : ''
   }${
-    purpose ? ` This videos is for ${purpose}.` : ''
-  } This is everything about my video: ${moreInfo}.${
+    purpose ? ` This videos is for ${purpose}\n` : ''
+  }\nThis is everything about my video: \n${moreInfo}\n\n${
     heardAbout ? ` I heard about you from ${heardAbout}` : ''
   }`,
 };
 
-transporter.sendMail(mailOptions, (err, data) => {
-  if (err) return Astro.redirect('/error');
-  if (data) console.log(data);
-  console.log(`Sent mail to ${smtpTo}`);
-
-  return Astro.redirect('/success');
-});
-
-return Astro.redirect('/success');
+return await new Promise((resolve, reject) => {
+  transporter.sendMail(mailOptions, (err, data) => {
+    if (err) return reject(err);
+    return resolve(data);
+  });
+})
+  .then(() => {
+    return Astro.redirect('/success');
+  })
+  .catch(() => {
+    return Astro.redirect('/error');
+  });
 ---
 
 <html lang="en">
