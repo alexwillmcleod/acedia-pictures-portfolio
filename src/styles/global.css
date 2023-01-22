@@ -12,4 +12,5 @@
 body {
   width: 100vw;
   background-color: #181b21;
+  overflow-x: hidden;
 }
