@@ -52,8 +52,11 @@ export const FeaturedComponent = (props: FeaturedProject) => {
 export const Featured = () => {
   return (
     <div className={styles.container}>
-      {featuredProjects.map((element) => (
-        <FeaturedComponent {...element} />
+      {featuredProjects.map((element, index) => (
+        <FeaturedComponent
+          {...element}
+          key={index}
+        />
       ))}
     </div>
   );
