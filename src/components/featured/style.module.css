@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-margin-block-start: 0rem;
+  height: 16rem;
+  max-width: 90vw;
+  background-color: transparent;
+}
+
+.featured-component-container {
+  min-width: min(22rem, 90.5vw);
+  background-repeat: no-repeat;
+  scroll-snap-align: start;
+  min-height: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.featured-component-container-child {
+  min-width: 20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.5) 50%,
+
+    rgba(0, 0, 0, 1) 90%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.4rem;
+}
+
+.featured-component-title {
+  background: rgb(238, 174, 202);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+
+  color: transparent;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description {
+  color: rgb(202, 202, 202);
+}
+
+.tag {
+  padding: 0.6rem;
+  background-color: rgb(51, 51, 51);
+  color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
