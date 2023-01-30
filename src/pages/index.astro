@@ -7,6 +7,7 @@ import '../styles/global.css';
 import portfolioVideo from './AcediaPictures.mp4';
 import favicon from '/favicon.ico';
 import { Featured } from '../components/featured/component';
+import EmailButton from '../components/email-button.astro';
 ---
 
 <html lang="en">
@@ -262,6 +263,7 @@ import { Featured } from '../components/featured/component';
         >Developed and deployed with &lt3 by Alex McLeod</a
       >
     </Footer>
+    <div class="email-button-div"><EmailButton /></div>
   </body>
 
   <style>
@@ -497,7 +499,16 @@ import { Featured } from '../components/featured/component';
       align-items: center;
     }
 
-    @media screen and (max-width: 1000px) {
+    .email-button-div {
+      position: fixed;
+      width: 4.5rem;
+      bottom: 1rem;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    @media screen and (max-width: 1220px) {
       .card {
         display: flex;
         flex-direction: column-reverse;
