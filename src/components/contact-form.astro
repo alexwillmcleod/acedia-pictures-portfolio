@@ -195,7 +195,7 @@
   .options {
     display: flex;
     flex-direction: column;
-    background-color: rgba(89, 109, 154, 0.329);
+    background-color: var(--light-color-transparent);
     padding: 1rem;
     gap: 1rem;
     border-radius: 0.5rem;
@@ -215,7 +215,7 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    background-color: rgba(68, 78, 99, 0.527);
+    background-color: var(--light-color-transparent);
     padding: 2rem;
     border-radius: 0.5rem;
     gap: 3rem;
@@ -226,21 +226,21 @@
     gap: 1rem;
   }
   .title {
-    background: rgb(238, 174, 202);
+    background: var(--pink-color);
     background: -moz-linear-gradient(
       90deg,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
+      var(--pink-color) 0%,
+      var(--blue-color) 100%
     );
     background: -webkit-linear-gradient(
       90deg,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
+      var(--pink-color) 0%,
+      var(--blue-color) 100%
     );
     background: linear-gradient(
       90deg,
-      rgba(238, 174, 202, 1) 0%,
-      rgba(148, 187, 233, 1) 100%
+      var(--pink-color) 0%,
+      var(--blue-color) 100%
     );
     background-clip: text;
     -moz-background-clip: text;
@@ -262,23 +262,24 @@
   }
 
   label {
-    color: rgb(202, 202, 202);
+    color: var(--dark-color);
     font-size: 1.2rem;
   }
   input {
     font-size: 1.2rem;
     border: none;
     padding: 1rem;
-    background-color: rgba(68, 78, 99, 0.527);
-    color: rgb(202, 202, 202);
+    background-color: var(--light-color-transparent);
+    color: var(--dark-color);
     border-radius: 0.5rem;
+    border: 0.1rem solid var(--dark-color);
   }
   textarea {
     font-size: 1.2rem;
-    border: none;
+    border: 0.2rem solid var(--dark-color);
     padding: 0.4rem;
-    background-color: rgba(68, 78, 99, 0.527);
-    color: rgb(202, 202, 202);
+    background-color: var(--light-color-transparent);
+    color: var(--dark-color);
     border-radius: 0.5rem;
   }
   .send-button {

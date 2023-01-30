@@ -1,5 +1,16 @@
 /* Import Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --light-color: rgb(247, 247, 247);
+  --dark-color: rgba(27, 31, 39, 0.98);
+  --light-color-transparent: rgba(255, 255, 255, 0.678);
+  --dark-color-transparent: rgba(27, 31, 39, 0.678);
+  --bright-neutral-color: black;
+  --pink-color: rgb(235, 132, 154);
+  --blue-color: rgb(68, 155, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +18,11 @@
   font-family: 'Inter';
   scroll-behavior: smooth;
   scroll-margin-block-start: 6rem;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
   width: 100vw;
-  background-color: #181b21;
+  background-color: var(--light-color);
   overflow-x: hidden;
 }
