@@ -193,7 +193,6 @@ import EmailButton from '../components/email-button.astro';
         // Check if we are the top of the page
         window.addEventListener('scroll', function () {
           const scrollLinkElement = document.querySelector('.scroll-link');
-          console.log(`window.scrollY: ${window.scrollY}`);
           if (window.scrollY < 100) {
             // If we are at the top of the page
             (scrollLinkElement! as HTMLElement).style.visibility = 'visible';
@@ -283,21 +282,7 @@ import EmailButton from '../components/email-button.astro';
         >Developed and deployed with &lt3 by Alex McLeod</a
       >
     </Footer>
-    <div class="email-button-div">
-      <script>
-        // Check if we are the top of the page
-        window.addEventListener('scroll', function () {
-          const scrollLinkElement = document.querySelector('.scroll-link');
-          console.log(`window.scrollY: ${window.scrollY}`);
-          if (window.scrollY < 100) {
-            // If we are at the top of the page
-            (scrollLinkElement! as HTMLElement).style.visibility = 'visible';
-          } else {
-            (scrollLinkElement! as HTMLElement).style.visibility = 'hidden';
-          }
-        });
-      </script><EmailButton />
-    </div>
+    <div class="email-button-div"><EmailButton /></div>
   </body>
 
   <style>
@@ -619,6 +604,10 @@ import EmailButton from '../components/email-button.astro';
 
       .hamburger-bar {
         display: flex;
+      }
+
+      .scroll-link {
+        visibility: hidden;
       }
 
       .email-button-div {
