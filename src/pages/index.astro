@@ -209,6 +209,28 @@ import EmailButton from '../components/email-button.astro';
     </div>
     <div
       class="card"
+      id="worked-with"
+    >
+      <div class="worked-with-div">
+        <p class="card-title">We've worked with</p>
+        <div class="worked-with-list">
+          <a class="worked-with-link">
+            <img
+              src="fresh-coaching-logo.png"
+              class="worked-with-logo"
+            />
+          </a>
+          <a class="worked-with-link">
+            <img
+              src="stella-yoga-logo.png"
+              class="worked-with-logo"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="card"
       id="testimonials"
     >
       <div class="testimonials-div">
@@ -468,6 +490,37 @@ import EmailButton from '../components/email-button.astro';
       padding: 0.5rem;
       background-color: #94bbe9;
       border-radius: 0.5rem;
+    }
+
+    .worked-with-div {
+      width: 100%;
+    }
+
+    .worked-with-list {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      /* justify-content: center; */
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding-top: 3rem;
+    }
+
+    .worked-with-link {
+      cursor: pointer;
+    }
+
+    .worked-with-logo {
+      width: 7rem;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.25s ease;
+    }
+
+    .worked-with-logo:hover {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      scale: 1.25;
     }
 
     .testimonials-div {
