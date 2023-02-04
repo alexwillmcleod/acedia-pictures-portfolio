@@ -460,9 +460,14 @@ import EmailButton from '../components/email-button.astro';
     .scroll-link {
       text-align: center;
       text-decoration: none;
-      color: var(--dark-color);
       font-weight: bold;
       font-size: 1.5rem;
+      filter: invert(1) grayscale(1);
+      -webkit-filter: invert(1) grayscale(1);
+      mix-blend-mode: difference;
+      padding: 0.5rem;
+      background-color: #94bbe9;
+      border-radius: 0.5rem;
     }
 
     .testimonials-div {

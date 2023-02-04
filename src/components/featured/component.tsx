@@ -19,6 +19,7 @@ export const Tag = (props: TagProps) => {
 
 type FeaturedProject = {
   title: string;
+  key: string;
   description?: string;
   coverImage: string;
   videoRef: string;
@@ -32,6 +33,7 @@ export const FeaturedComponent = (props: FeaturedProject) => {
       style={{
         backgroundImage: `url("${props.coverImage}")`,
       }}
+      key={props.key}
     >
       <div className={styles['featured-component-container-child']}>
         <h1 className={styles['featured-component-title']}>
@@ -55,7 +57,7 @@ export const Featured = () => {
       {featuredProjects.map((element, index) => (
         <FeaturedComponent
           {...element}
-          key={index}
+          key={`featured-component-${index}`}
         />
       ))}
     </div>
