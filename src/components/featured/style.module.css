@@ -4,7 +4,8 @@
   gap: 2rem;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  scroll-margin-block-start: 0rem;
+  scroll-snap-stop: always;
+  scroll-margin-block-start: center;
   height: 16rem;
   max-width: 90vw;
   background-color: transparent;
@@ -27,12 +28,12 @@
   min-width: 20rem;
   padding: 1rem;
   border-radius: 0.5rem;
-
+  position: relative;
   height: 100%;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 30%,
-    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.8) 60%,
 
     rgba(0, 0, 0, 1) 90%
   );
@@ -83,4 +84,13 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+.video-link {
+  position: absolute;
+  /* margin-left: auto; */
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  color: var(--light-color);
 }

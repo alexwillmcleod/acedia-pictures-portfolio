@@ -1,32 +1,25 @@
 [
   {
     "title": "Parasomnia",
-    "coverImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FExUogFENS-kFdQGWSisYWc6zrvegt-w-foSAFb_w6teJ02cp0BxiF6SP51C37UnHi-w&f=1&nofb=1&ipt=b3cb6badde693c35404d037a6b1042186b694f624b6d72b00c9f3c9984c466c8&ipo=images",
-    "videoRef": "https://www.youtube.com/watch?v=Di310WS8zLk",
-    "description": "Cinematic masterpiece",
+    "coverImage": "parasomnia-thumbnail.jpg",
+    "description": "Coming out Spring 2023",
     "tags": [
       {
-        "text": "New",
+        "text": "Soon",
         "color": "#ffcccc"
       }
     ]
   },
   {
     "title": "Sit Tight",
-    "coverImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FExUogFENS-kFdQGWSisYWc6zrvegt-w-foSAFb_w6teJ02cp0BxiF6SP51C37UnHi-w&f=1&nofb=1&ipt=b3cb6badde693c35404d037a6b1042186b694f624b6d72b00c9f3c9984c466c8&ipo=images",
-    "videoRef": "https://www.youtube.com/watch?v=Di310WS8zLk",
+    "coverImage": "sit-tight-thumbnail.png",
+    "videoRef": "https://www.youtube.com/watch?v=usWSG4kH-Zs",
     "description": "48 Hour Film competition project"
   },
   {
     "title": "2022 Reel",
-    "coverImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FExUogFENS-kFdQGWSisYWc6zrvegt-w-foSAFb_w6teJ02cp0BxiF6SP51C37UnHi-w&f=1&nofb=1&ipt=b3cb6badde693c35404d037a6b1042186b694f624b6d72b00c9f3c9984c466c8&ipo=images",
-    "videoRef": "https://www.youtube.com/watch?v=Di310WS8zLk",
+    "coverImage": "2022-reel-thumbnail.jpg",
+    "videoRef": "https://www.youtube.com/watch?v=Di310WS8zLkhttps://www.youtube.com/watch?v=24VU65Ueimg",
     "description": "Our highlights from 2022"
-  },
-  {
-    "title": "2021 Reel",
-    "coverImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FExUogFENS-kFdQGWSisYWc6zrvegt-w-foSAFb_w6teJ02cp0BxiF6SP51C37UnHi-w&f=1&nofb=1&ipt=b3cb6badde693c35404d037a6b1042186b694f624b6d72b00c9f3c9984c466c8&ipo=images",
-    "videoRef": "https://www.youtube.com/watch?v=Di310WS8zLk",
-    "description": "Our best moments from 2021"
   }
 ]
