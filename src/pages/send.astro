@@ -39,9 +39,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+const mailList = smtpTo?.split(' ');
+
 const mailOptions: Mail.Options = {
   from: name,
-  to: smtpTo,
+  to: mailList,
   subject: 'Portfolio Contact',
   text: `Name:${name}\nEmail: ${email}\n${
     company ? ` I work for ${company}\n` : ''
