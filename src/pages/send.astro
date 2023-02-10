@@ -46,11 +46,11 @@ const mailOptions: Mail.Options = {
   to: mailList,
   subject: 'Portfolio Contact',
   text: `Name:${name}\nEmail: ${email}\n${
-    company ? ` I work for ${company}\n` : ''
+    company ? `I work for ${company}\n` : ''
   }${
-    purpose ? ` This videos is for ${purpose}\n` : ''
+    purpose ? `This videos is for ${purpose}\n` : ''
   }\nThis is everything about my video: \n${moreInfo}\n\n${
-    heardAbout ? ` I heard about you from ${heardAbout}` : ''
+    heardAbout ? `I heard about you from ${heardAbout}` : ''
   }`,
 };
 
