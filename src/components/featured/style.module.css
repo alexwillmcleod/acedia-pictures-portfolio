@@ -6,13 +6,13 @@
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   scroll-margin-block-start: center;
-  height: 16rem;
+  height: 19rem;
   max-width: 90vw;
   background-color: transparent;
 }
 
 .featured-component-container {
-  min-width: min(22rem, 90.5vw);
+  min-width: min(24rem, 90.5vw);
   background-repeat: no-repeat;
   scroll-snap-align: start;
   min-height: 100%;
@@ -33,7 +33,7 @@
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 30%,
-    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0.75) 75%,
 
     rgba(0, 0, 0, 1) 90%
   );
