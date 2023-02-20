@@ -17,6 +17,12 @@
     "description": "48 Hour Film competition project"
   },
   {
+    "title": "2023 Reel",
+    "videoRef": "https://www.youtube.com/watch?v=_rv5z6YjyMI",
+    "coverImage": "reel-2023-thumbnail.png",
+    "description": "Our highlights from 2023"
+  },
+  {
     "title": "2022 Reel",
     "coverImage": "2022-reel-thumbnail.jpg",
     "videoRef": "https://www.youtube.com/watch?v=24VU65Ueimg",

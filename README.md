@@ -5,3 +5,5 @@
 Portfolio website developed for Acedia Pictures with Astro, implementing the island architecture and deployed on Netlify. Available at https://www.acediapictures.com
 
 ![](public/screenshot.png)
+
+
