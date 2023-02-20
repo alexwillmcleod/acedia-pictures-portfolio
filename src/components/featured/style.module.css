@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -22,6 +26,7 @@
   flex-direction: column;
   justify-content: flex-end;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .featured-component-container-child {

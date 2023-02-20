@@ -27,12 +27,18 @@ type FeaturedProject = {
 };
 
 export const FeaturedComponent = (props: FeaturedProject) => {
+  const handleClick = () => {
+    console.log('Testing');
+    if (props.videoRef) window.open(props.videoRef, '_blank');
+  };
+
   return (
     <div
       className={styles['featured-component-container']}
       style={{
         backgroundImage: `url("${props.coverImage}")`,
       }}
+      onClick={handleClick}
       key={props.key}
     >
       <div className={styles['featured-component-container-child']}>
