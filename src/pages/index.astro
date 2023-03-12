@@ -8,6 +8,7 @@ import portfolioVideo from './AcediaPictures.mp4';
 import favicon from '/favicon.ico';
 import { Featured } from '../components/featured/component';
 import EmailButton from '../components/email-button.astro';
+import Slides from '../components/slides/component';
 ---
 
 <html lang="en">
@@ -118,7 +119,9 @@ import EmailButton from '../components/email-button.astro';
           Zealand 🇳🇿 📍
         </p>
       </div>
-      <div class="logo-div"></div>
+      <div class="logo-div">
+        <!-- <Slides client:load /> -->
+      </div>
     </div>
     <div
       class="card"
@@ -242,7 +245,7 @@ import EmailButton from '../components/email-button.astro';
       <p class="foot-divider">|</p>
       <a
         class="foot-item"
-        href="https://www.instagram.com/acediapictures/"
+        href="https://www.instagram.com/acedia.pictures/"
         target="_blank"
         >Instagram</a
       >
