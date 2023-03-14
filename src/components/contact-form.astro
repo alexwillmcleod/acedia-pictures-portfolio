@@ -5,12 +5,14 @@
       <label for="name">Hi! My name is</label>
       <input
         name="name"
+        class="text-input"
         placeholder="Your Name"
       />
     </div>
     <div class="label-input-pair">
       <label for="email">My email is</label>
       <input
+        class="text-input"
         name="email"
         placeholder="Your Email"
       />
@@ -20,6 +22,7 @@
 
       <input
         name="company"
+        class="text-input"
         placeholder="Your Company (if applicable)"
       />
     </div>
@@ -269,6 +272,9 @@
   label {
     color: var(--dark-color);
     font-size: 1.2rem;
+  }
+  .text-input {
+    width: min(30rem, 100vw);
   }
   input {
     font-size: 1.2rem;
