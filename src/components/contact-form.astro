@@ -28,7 +28,7 @@
       <label for="purpose">This video is for</label>
 
       <div class="options">
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="business-promotion"
             class="radio-input"
@@ -43,7 +43,7 @@
             name="purpose"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="product-advertisement"
             class="radio-input"
@@ -58,7 +58,7 @@
             name="purpose"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="event-coverage"
             class="radio-input"
@@ -73,7 +73,7 @@
             name="purpose"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="training-video"
             class="radio-input"
@@ -88,7 +88,7 @@
             name="purpose"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="other"
             class="radio-input"
@@ -118,7 +118,7 @@
       <label for="heard-about">I heard about you from:</label>
 
       <div class="options">
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="google"
             class="radio-input"
@@ -133,7 +133,7 @@
             name="heard-about"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="word-of-mouth"
             class="radio-input"
@@ -148,7 +148,7 @@
             name="heard-about"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="social-media"
             class="radio-input"
@@ -163,7 +163,7 @@
             name="heard-about"
           />
         </div>
-        <div class="label-input-pair">
+        <div class="label-radio-pair">
           <label
             for="other"
             class="radio-input"
@@ -251,9 +251,14 @@
   }
   .label-input-pair {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .label-radio-pair {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
   }
   .label-textarea-pair {
     display: flex;
@@ -296,5 +301,9 @@
     textarea {
       max-width: 100%;
     }
+    /* .label-input-pair {
+      flex-direction: column;
+      align-items: flex-start;
+    } */
   }
 </style>

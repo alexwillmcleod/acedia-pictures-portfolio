@@ -8,6 +8,7 @@ import portfolioVideo from './AcediaPictures.mp4';
 import favicon from '/favicon.ico';
 import { Featured } from '../components/featured/component';
 import EmailButton from '../components/email-button.astro';
+import Instagram from '../components/instagram.astro';
 import Slides from '../components/slides/component';
 ---
 
@@ -161,6 +162,9 @@ import Slides from '../components/slides/component';
       </div>
       <div class="logo-div">
         <!-- <Slides client:load /> -->
+        <div class="instagram-div">
+          <Instagram />
+        </div>
       </div>
     </div>
     <div
@@ -319,9 +323,9 @@ import Slides from '../components/slides/component';
   <style>
     .title {
       font-family: 'Inter';
-      font-size: 8rem;
+      font-size: 9rem;
       font-weight: 600;
-      line-height: 7rem;
+      line-height: 8rem;
       background: var(--pink-color);
       background: -moz-linear-gradient(
         90deg,
@@ -421,7 +425,7 @@ import Slides from '../components/slides/component';
       transition: background-size 300ms ease;
     }
     .call-to-action-get-started:visited {
-      /* color: rgb(202, 202, 202); */
+      color: rgb(202, 202, 202);
       color: var(--dark-color);
     }
     .call-to-action-get-started:hover {
@@ -433,6 +437,7 @@ import Slides from '../components/slides/component';
       justify-content: left;
       align-items: left;
       gap: 2rem;
+      padding-top: 3rem;
       width: 50%;
     }
     .logo-div {
@@ -442,10 +447,16 @@ import Slides from '../components/slides/component';
       align-items: center;
       width: 50%;
     }
+    .instagram-div {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .about {
       font-family: 'Inter';
       color: var(--dark-color);
-
       font-size: 1.4rem;
       font-weight: 500;
     }
@@ -614,7 +625,7 @@ import Slides from '../components/slides/component';
     @media screen and (max-width: 1220px) {
       .card {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
       }
       .about-div {
@@ -622,6 +633,7 @@ import Slides from '../components/slides/component';
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 0;
       }
       .logo-div {
         width: 100%;
@@ -680,10 +692,10 @@ import Slides from '../components/slides/component';
         display: none;
       }
 
-      .email-button-div {
+      /* .email-button-div {
         display: none;
         visibility: hidden;
-      }
+      } */
     }
   </style>
 </html>
